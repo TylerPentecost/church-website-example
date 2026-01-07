@@ -1,7 +1,16 @@
 // Church Website JavaScript
 
-// Admin Login Functionality
+// Smooth scroll to top when changing tabs
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Initialize all functionality when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Admin Login Functionality
     const adminLoginForm = document.getElementById('adminLoginForm');
     const adminPanel = document.getElementById('adminPanel');
     
@@ -53,20 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add active class to current nav link
             event.target.classList.add('active');
         });
-    });
-});
-
-// Smooth scroll to top when changing tabs
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-
-// Add scroll to top on tab change
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('[data-bs-toggle="tab"]').forEach(tab => {
+        
+        // Add scroll to top on tab change
         tab.addEventListener('click', scrollToTop);
     });
 });
