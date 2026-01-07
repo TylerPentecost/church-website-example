@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Church</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Our Church</a>
+            <!-- Hamburger menu button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation tabs (visible on desktop, hamburger menu on mobile) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#facebook">Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#admin">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="mainTabContent">
+        <!-- Home Page -->
+        <div class="tab-pane fade show active" id="home" role="tabpanel">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="display-4 text-center mb-4">Welcome to Our Church</h1>
+                        <div class="hero-section text-center mb-5">
+                            <img src="https://via.placeholder.com/1200x400/4285F4/ffffff?text=Welcome+to+Our+Church" alt="Church Banner" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow">
+                            <div class="card-body text-center">
+                                <i class="bi bi-heart-fill text-primary" style="font-size: 3rem;"></i>
+                                <h3 class="card-title mt-3">Our Mission</h3>
+                                <p class="card-text">To spread love, hope, and faith throughout our community and beyond.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow">
+                            <div class="card-body text-center">
+                                <i class="bi bi-people-fill text-primary" style="font-size: 3rem;"></i>
+                                <h3 class="card-title mt-3">Our Community</h3>
+                                <p class="card-text">A welcoming family of believers supporting each other in faith and life.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow">
+                            <div class="card-body text-center">
+                                <i class="bi bi-calendar-event-fill text-primary" style="font-size: 3rem;"></i>
+                                <h3 class="card-title mt-3">Join Us</h3>
+                                <p class="card-text">Sunday Services at 9:00 AM and 11:00 AM. Everyone is welcome!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h2 class="card-title">About Us</h2>
+                                <p class="card-text">Welcome to our church community! We are a vibrant congregation dedicated to worship, fellowship, and service. Our doors are always open to those seeking spiritual growth, meaningful connections, and a place to call home.</p>
+                                <p class="card-text">Whether you're new to faith or have been walking with God for years, we invite you to join us on this journey. Together, we strive to make a positive impact in our community and glorify God in all we do.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events Page -->
+        <div class="tab-pane fade" id="events" role="tabpanel">
+            <div class="container mt-5">
+                <h1 class="display-4 text-center mb-5">Upcoming Events</h1>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card shadow">
+                            <div class="card-header bg-primary text-white">
+                                <h4 class="mb-0">Sunday Worship Service</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><i class="bi bi-calendar3"></i> <strong>When:</strong> Every Sunday, 9:00 AM & 11:00 AM</p>
+                                <p class="card-text"><i class="bi bi-geo-alt-fill"></i> <strong>Where:</strong> Main Sanctuary</p>
+                                <p class="card-text">Join us for inspiring worship, powerful messages, and a time of fellowship with our church family.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card shadow">
+                            <div class="card-header bg-success text-white">
+                                <h4 class="mb-0">Wednesday Bible Study</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><i class="bi bi-calendar3"></i> <strong>When:</strong> Every Wednesday, 7:00 PM</p>
+                                <p class="card-text"><i class="bi bi-geo-alt-fill"></i> <strong>Where:</strong> Fellowship Hall</p>
+                                <p class="card-text">Dive deeper into God's Word with our weekly Bible study. All ages welcome!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card shadow">
+                            <div class="card-header bg-info text-white">
+                                <h4 class="mb-0">Youth Group</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><i class="bi bi-calendar3"></i> <strong>When:</strong> Every Friday, 6:00 PM</p>
+                                <p class="card-text"><i class="bi bi-geo-alt-fill"></i> <strong>Where:</strong> Youth Center</p>
+                                <p class="card-text">Fun, fellowship, and faith-building activities for teens and young adults.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card shadow">
+                            <div class="card-header bg-warning text-dark">
+                                <h4 class="mb-0">Community Outreach</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><i class="bi bi-calendar3"></i> <strong>When:</strong> First Saturday of each month, 10:00 AM</p>
+                                <p class="card-text"><i class="bi bi-geo-alt-fill"></i> <strong>Where:</strong> Various Locations</p>
+                                <p class="card-text">Serve our community through various outreach programs and volunteer opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div class="alert alert-primary" role="alert">
+                            <h5 class="alert-heading"><i class="bi bi-info-circle-fill"></i> Stay Updated!</h5>
+                            <p class="mb-0">For the latest event updates and announcements, please check our Facebook page or contact the church office.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Facebook Page -->
+        <div class="tab-pane fade" id="facebook" role="tabpanel">
+            <div class="container mt-5">
+                <h1 class="display-4 text-center mb-5">Connect With Us on Facebook</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <p class="lead">Stay connected with our church community on Facebook!</p>
+                                <!-- Facebook Page Plugin -->
+                                <div class="fb-page-container">
+                                    <div id="fb-root"></div>
+                                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+                                    <div class="fb-page" 
+                                         data-href="https://www.facebook.com/facebook" 
+                                         data-tabs="timeline" 
+                                         data-width="500" 
+                                         data-height="600" 
+                                         data-small-header="false" 
+                                         data-adapt-container-width="true" 
+                                         data-hide-cover="false" 
+                                         data-show-facepile="true">
+                                        <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                                            <a href="https://www.facebook.com/facebook">Facebook</a>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="text-muted"><small>Note: Replace the Facebook page URL with your church's actual Facebook page URL in the code.</small></p>
+                                    <p><i class="bi bi-facebook" style="font-size: 2rem; color: #1877f2;"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Admin Page -->
+        <div class="tab-pane fade" id="admin" role="tabpanel">
+            <div class="container mt-5">
+                <h1 class="display-4 text-center mb-5">Admin Dashboard</h1>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-warning" role="alert">
+                            <h5 class="alert-heading"><i class="bi bi-shield-lock-fill"></i> Restricted Area</h5>
+                            <p class="mb-0">This area is for authorized church administrators only. Please log in to access admin features.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="card shadow">
+                            <div class="card-header bg-dark text-white">
+                                <h4 class="mb-0 text-center">Admin Login</h4>
+                            </div>
+                            <div class="card-body">
+                                <form id="adminLoginForm">
+                                    <div class="mb-3">
+                                        <label for="username" class="form-label">Username</label>
+                                        <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div class="card shadow" id="adminPanel" style="display: none;">
+                            <div class="card-header bg-success text-white">
+                                <h4 class="mb-0">Admin Panel</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <div class="card bg-primary text-white text-center">
+                                            <div class="card-body">
+                                                <i class="bi bi-people" style="font-size: 2rem;"></i>
+                                                <h5 class="mt-2">Members</h5>
+                                                <p class="display-6">245</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <div class="card bg-success text-white text-center">
+                                            <div class="card-body">
+                                                <i class="bi bi-calendar-event" style="font-size: 2rem;"></i>
+                                                <h5 class="mt-2">Events</h5>
+                                                <p class="display-6">12</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <div class="card bg-info text-white text-center">
+                                            <div class="card-body">
+                                                <i class="bi bi-envelope" style="font-size: 2rem;"></i>
+                                                <h5 class="mt-2">Messages</h5>
+                                                <p class="display-6">38</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <div class="card bg-warning text-dark text-center">
+                                            <div class="card-body">
+                                                <i class="bi bi-file-earmark-text" style="font-size: 2rem;"></i>
+                                                <h5 class="mt-2">Posts</h5>
+                                                <p class="display-6">56</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-12">
+                                        <h5>Quick Actions</h5>
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-outline-primary">Add Event</button>
+                                            <button type="button" class="btn btn-outline-success">Manage Members</button>
+                                            <button type="button" class="btn btn-outline-info">View Messages</button>
+                                            <button type="button" class="btn btn-outline-warning">Create Post</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-geo-alt"></i> 123 Church Street<br>City, State 12345</p>
+                    <p><i class="bi bi-telephone"></i> (555) 123-4567</p>
+                    <p><i class="bi bi-envelope"></i> info@ourchurch.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Service Times</h5>
+                    <p>Sunday: 9:00 AM & 11:00 AM<br>Wednesday: 7:00 PM</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <p>
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-youtube" style="font-size: 1.5rem;"></i></a>
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2026 Our Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
