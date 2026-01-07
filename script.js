@@ -3,8 +3,11 @@
 // Dark Mode Toggle Functionality
 function initDarkMode() {
     const darkModeToggle = document.getElementById('darkModeToggle');
+    if (!darkModeToggle) return;
+    
     const htmlElement = document.documentElement;
     const icon = darkModeToggle.querySelector('i');
+    if (!icon) return;
     
     // Check for saved theme preference or default to light mode
     const currentTheme = localStorage.getItem('theme') || 'light';
