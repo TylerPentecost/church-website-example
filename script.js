@@ -1,5 +1,44 @@
 // Church Website JavaScript
 
+// Dark Mode Toggle Functionality
+function initDarkMode() {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    if (!darkModeToggle) return;
+    
+    const htmlElement = document.documentElement;
+    const icon = darkModeToggle.querySelector('i');
+    if (!icon) return;
+    
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    
+    // Apply saved theme
+    if (currentTheme === 'dark') {
+        htmlElement.setAttribute('data-theme', 'dark');
+        icon.classList.remove('bi-moon-fill');
+        icon.classList.add('bi-sun-fill');
+    }
+    
+    // Toggle dark mode on button click
+    darkModeToggle.addEventListener('click', function() {
+        const theme = htmlElement.getAttribute('data-theme');
+        
+        if (theme === 'dark') {
+            // Switch to light mode
+            htmlElement.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+            icon.classList.remove('bi-sun-fill');
+            icon.classList.add('bi-moon-fill');
+        } else {
+            // Switch to dark mode
+            htmlElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            icon.classList.remove('bi-moon-fill');
+            icon.classList.add('bi-sun-fill');
+        }
+    });
+}
+
 // Smooth scroll to top when changing tabs
 function scrollToTop() {
     window.scrollTo({
@@ -10,6 +49,9 @@ function scrollToTop() {
 
 // Initialize all functionality when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize dark mode
+    initDarkMode();
+    
     // Admin Login Functionality
     const adminLoginForm = document.getElementById('adminLoginForm');
     const adminPanel = document.getElementById('adminPanel');
